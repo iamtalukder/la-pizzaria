@@ -1,0 +1,21 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Student Register</h1>
+      <form class="form-register">
+        <input type="text" name="name" placeholder="Student's  Name">
+        <input type="text" name="email" placeholder="Student's  Email">
+        <input type="text" name="phone" placeholder="Student's  Phone">
+        <input type="date" name="bDay" placeholder="Student's  Birthday">
+        <button type="submit" class="register">Register</button>
+      </form>
+    </header>
+
+  <!-- Displaying data using view template -->
+    <ul>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
